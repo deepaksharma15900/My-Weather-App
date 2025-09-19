@@ -13,8 +13,7 @@ function WeatherApp(){
   let handleClick = () => {
     const getWeather = async () => {
       try {
-        // Replace YOUR_API_KEY with your actual API key
-        // const API_KEY = "b9d22eb34a01cd7fb09ccae65dac57e9"; // Replace with your valid API key
+        
         const city = inputRef.current.value;
         
         if (!city.trim()) {
