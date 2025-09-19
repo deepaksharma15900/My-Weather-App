@@ -13,7 +13,7 @@ function WeatherApp(){
   let handleClick = () => {
     const getWeather = async () => {
       try {
-        
+
         const city = inputRef.current.value;
         
         if (!city.trim()) {
@@ -115,54 +115,3 @@ function WeatherApp(){
 );
 }
 export default WeatherApp;
-
-// =================================================================================================
-// export default WeatherApp
-
-// import { Search } from 'lucide-react'
-// import { useRef } from 'react'
-// API_KEY = "e99813b562595bfe317fc13c6fbc2d54"
-
-// function WeatherApp(){
-//   const inputRef = useRef();
-//   let handleChange = () =>{
-//     console.log(inputRef.current.value);
-//   }
-//     const getWeather = async () =>{
-//       try{
-//       let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputRef.current.value}&appid=${VITE_API_KEY}`);
-//          if (!res.ok) {
-//           throw new Error(`HTTP error! status: ${res.status}`);
-//         }
-//       let data = await res.json()
-//       console.log(data)
-//       }
-//       catch(err){
-//         console.log('Error Occured');
-//         console.log(err);
-//       }
-//       finally{
-//         console.log("Finally executed");
-//       }
-//     }
-//   return(
-//     <>
-//       <div className="flex justify-center items-center min-h-screen">
-//         <div className="flex items-center gap-3">
-//           <input 
-//             ref={inputRef}
-//             onChange={handleChange}
-//             type="text" 
-//             placeholder="Enter City Name" 
-//             className="w-64 h-10 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//           />
-//           <button onClick={getWeather} className="h-10 w-10 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors flex items-center justify-center">
-//             <Search size={20} />
-//           </button>
-//         </div>
-//       </div>
-//     </>
-//   )
-// }
-
-// export default WeatherApp
