@@ -39,16 +39,3 @@ It fetches real-time weather data using the **OpenWeatherMap API** and displays 
 4. Start the development server:
 
   npm run dev
-
-Project Structure
-weather-app/
- ├── src/
- │   ├── components/
- │   │   └── WeatherApp.jsx
- │   ├── App.jsx
- │   └── main.jsx
- ├── public/
- ├── .env.example
- ├── .gitignore
- ├── package.json
- └── README.md
